@@ -1,0 +1,57 @@
+spring:
+  application:
+    name: eureka-service
+server:
+  port: 8761
+
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    service:
+      waitTimeInMsWhenSyncEmpty: 0
+
+zuul:
+  #service will be mapped under the /api uri
+  prefix: /api
+  routes:
+    categorie:
+      path: /categorie/**
+      url: http://localhost:8082
+    projet:
+      path: /projet/**
+      url: http://localhost:8081
+    commentaire:
+      path: /commentaire/**
+      url: http://localhost:8083
+    censure:
+      path: /censure/**
+      url: http://localhost:8089
+    debat:
+      path: /debat/**
+      url: http://localhost:8088
+    debatuc:
+      path : /debatuc/**
+      url: http://localhost:8095
+    like:
+      path: /like/**
+      url: http://localhost:8085
+    media:
+      path: /media/**
+      url: http://localhost:8086
+    note:
+      path: /note/**
+      url: http://localhost:8084
+    notification:
+      path: /notification/**
+      url: http://localhost:8092
+    preference:
+      path: /preference/**
+      url: http://localhost:8090
+    programme:
+      path: /programme/**
+      url: http://localhost:8091
+    sondage:
+      path: /sondage/**
+      url: http://localhost:8087
+
