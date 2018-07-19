@@ -17,41 +17,47 @@ zuul:
   routes:
     categorie:
       path: /categorie/**
-      url: http://localhost:8082
+      url: http://categorie:8082
     projet:
       path: /projet/**
-      url: http://localhost:8081
+      url: http://projet:8081
     commentaire:
       path: /commentaire/**
-      url: http://localhost:8083
+      url: http://commentaire:8083
     censure:
       path: /censure/**
-      url: http://localhost:8089
+      url: http://censure:8089
     debat:
       path: /debat/**
-      url: http://localhost:8088
+      url: http://debat:8088
     debatuc:
       path : /debatuc/**
-      url: http://localhost:8095
+      url: http://debatuc:8095
     like:
       path: /like/**
-      url: http://localhost:8085
+      url: http://like:8085
     media:
       path: /media/**
-      url: http://localhost:8086
+      url: http://media:8086
     note:
       path: /note/**
-      url: http://localhost:8084
+      url: http://note:8084
     notification:
       path: /notification/**
-      url: http://localhost:8092
+      url: http://notification:8092
     preference:
       path: /preference/**
-      url: http://localhost:8090
+      url: http://preference:8090
     programme:
       path: /programme/**
-      url: http://localhost:8091
+      url: http://programme:8091
     sondage:
       path: /sondage/**
-      url: http://localhost:8087
+      url: http://sondage:8087
+    stats:
+      path: /stats/**
+      url: http://stats:9093
+    user:
+      path: /users/**
+      url: http://user:8087
 
