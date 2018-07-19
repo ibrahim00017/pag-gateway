@@ -17,7 +17,7 @@ zuul:
   routes:
     categorie:
       path: /categorie/**
-      url: http://categorie:8082
+      url: http://categorie:6082
     projet:
       path: /projet/**
       url: http://projet:8081
@@ -53,11 +53,11 @@ zuul:
       url: http://programme:8091
     sondage:
       path: /sondage/**
-      url: http://sondage:8087
+      url: http://sondage:7087
     stats:
       path: /stats/**
-      url: http://stats:9093
+      url: http://stats:6093
     user:
       path: /users/**
-      url: http://user:8087
+      url: http://user:6087
 
