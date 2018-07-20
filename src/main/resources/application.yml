@@ -61,3 +61,6 @@ zuul:
       path: /users/**
       url: http://user:6087
 
+ribbon:
+  readTimeout: 5000
+  connectTimeout: 5000
