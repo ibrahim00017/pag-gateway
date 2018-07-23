@@ -11,6 +11,14 @@ eureka:
     service:
       waitTimeInMsWhenSyncEmpty: 0
 
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000
+
 zuul:
   #service will be mapped under the /api uri
   prefix: /api
